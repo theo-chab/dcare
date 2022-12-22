@@ -4,7 +4,8 @@ import ArgumentParser
 @main
 struct dcare: ParsableCommand {
 
-    @Flag var trump = false
+    @Flag(name: .short, help: "Use this option to get a random stupid Donald Trump tweet")
+    var trump = false
 
     public func run() throws {
         
